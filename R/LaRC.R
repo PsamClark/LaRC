@@ -37,7 +37,7 @@ LaRC<-function(data_set,dims=2,nsize=16,runs=100,meth="lcs"){
   cmds<-cmdscale(dist,k=dims)
   
   #combine scaled distances and fit data
-  mds<-as.tibble(cmds)
+  mds<-as_tibble(cmds)
   
   new_set<-
     bind_cols(data_set,mds)
