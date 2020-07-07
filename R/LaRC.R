@@ -1,14 +1,32 @@
-#version: 0.9.5.1
-library(stringdist)
-#version: 1.2.1
-library(tidyverse)
-#version: 1.2-2
-library(splus2R)
-#version: 3.7-4
-library(plotrix)
-
-"Landscape Roughness Calculator: Function for calculating roughness 
-by sampling across a fitness landscape based on sequence data"
+#' Landscape Roughness Calculator: 
+#' 
+#' Function for calculating roughness by sampling 
+#' across a fitness landscape based on sequence data. 
+#' Function initially calculates string distances between 
+#' sequences and and condenses the resultant distance
+#' matrix to the number of dimensions requested
+#' a linear fit between the fitness value and the dimensions
+#' is then calculated and the average slope for this fit is c
+#' alculated.The final step is to calculate the sum of the 
+#' residuals to the fit squared divided by the mean slope
+#' to give the roughness/slope.
+#' This calculation is repeated several times with bootstrap 
+#' sampling on the full set and the mean and standard error
+#' of the roughness/slope values is calculated.
+#' 
+#' 
+#' 
+#' @param data_set tibble containing paired sequences and fitness values
+#' @param dims number of dimensions requested for landscape
+#' @param nsize number of data points extracted in each sampling
+#' @param runs number of times sampling is performed
+#' @param meth string distance calculation method 
+#' 
+#' @return Returns a list object containing the mean 
+#' and standard error of the roughness/slope values obtained
+#' from sampling.  
+#' 
+#' @export 
 
 LaRC<-function(data_set,dims=2,nsize=16,runs=100,meth="lcs"){
   
