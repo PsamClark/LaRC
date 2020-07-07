@@ -13,9 +13,9 @@ License: MIT
 Encoding: UTF-8
 LazyData: true
 Depends: R (>= 3.5.0),
-         stringdist (>=0.9.5.1),
-         tidyverse (>=1.2.1),
-         splus2R (>=1.2-2),
-         plotrix (>=3.7-4)
+         stringdist (>= 0.9.5.1),
+         tidyverse (>= 1.2.1),
+         splus2R (>= 1.2-2),
+         plotrix (>= 3.7-4)
 URL: https://github.com/PsamClark/LaRC
 BugReports: https://github.com/PsamClark/LaRC/issues
