@@ -2,7 +2,7 @@
 % Please edit documentation in R/LaRC.R
 \name{LaRC}
 \alias{LaRC}
-\title{Landscape Roughness Calculator:}
+\title{Landscape Roughness Calculator}
 \usage{
 LaRC(data_set, dims = 2, nsize = 16, runs = 100, meth = "lcs")
 }
