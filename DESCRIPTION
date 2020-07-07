@@ -2,11 +2,17 @@ Package: LaRC
 Type: Package
 Title: Landscape Roughness Calculator
 Version: 0.1.0
+<<<<<<< HEAD
 Author: c(
     person("Sam", "Clark", role = c("aut", "cre"), email = "sc0271@my.bristol.ac.uk"))
 Maintainer: Sam Clark <sc0271@my.bristol.ac.uk>
 Description: Functions for calculating roughness over slope across 
 a fitness landscape based on sequence data by bootstrap sampling.
+=======
+Author: Sam Clark
+Maintainer: The package maintainer sc0271@my.bristol.ac.uk
+Description: Functions for calculating roughness over slope across a fitness landscape based on sequence data by bootstrap sampling.
+>>>>>>> 359e0ec5e1f074aa1ccde339517efafd0782ff9a
 License: MIT
 Encoding: UTF-8
 LazyData: true
